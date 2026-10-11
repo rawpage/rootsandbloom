@@ -26,8 +26,6 @@ Any static host works (GitHub Pages, Netlify, Vercel, Cloudflare Pages). Point t
 
 ## To do before launch
 
-- **Portraits of Marianne and Melanie.** The two "Meet us" blocks are still labelled colour placeholders. Replace the label with an image:
-  `<figure class="photo photo--tall tilt-l-sm"><img src="assets/img/marianne.jpg" alt="Marianne"></figure>`
 - **Photo consent.** Confirm each child's photo in `assets/img/` is cleared for use on the website.
 - **Enquiry form.** It currently opens the visitor's email app addressed to hello@rootsandbloom.co. Connect a form service for in-page sending.
 - **Legal pages.** Privacy policy and cookie notice are not yet written.
