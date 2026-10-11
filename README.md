@@ -1,6 +1,6 @@
 # Roots & Bloom
 
-Website for Roots & Bloom, relaxed nursery and primary school photography in Bristol by Marianne and Melanie.
+Website for Roots & Bloom, relaxed nursery photography in Bristol by Marianne and Melanie.
 
 Live domain: www.rootsandbloom.co
 
