@@ -335,3 +335,22 @@ button, input, textarea { font: inherit; color: inherit; }
 .prose a { color: var(--blue); font-weight: 600; text-decoration: underline; }
 .prose strong { color: var(--ink); }
 .todo { background: var(--sun); color: var(--ink); font-weight: 600; padding: 0 0.3em; border-radius: 4px; }
+
+/* ---------- Mobile refinements ---------- */
+.btn { text-align: center; line-height: 1.2; }
+.site-header { -webkit-backdrop-filter: blur(10px); }
+.site-footer__links a, .site-footer__links span { padding: 10px 0; min-height: 44px; display: flex; align-items: center; }
+.fact .num { flex: none; }
+
+@media (max-width: 900px) {
+  .meet__copy { order: -1; }
+  .panel .btn { align-self: stretch; padding-block: 14px; }
+}
+@media (max-width: 560px) {
+  .pill { font-size: 0.8125rem; padding: 7px 14px; }
+  .fact { flex-direction: column; align-items: flex-start; gap: 6px; padding: 20px 22px; }
+  .fact .num { min-width: 0; }
+  .faq summary { padding: 16px 20px; }
+  .faq__body { padding: 0 20px 22px; }
+  .sticker { font-size: 1.5rem; }
+}
