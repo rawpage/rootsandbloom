@@ -2,17 +2,17 @@
    Design tokens and styles (roots1 design) */
 
 :root {
-  --ink: #15171c;
-  --ink-soft: #3d424e;
-  --muted: #6b7080;
+  --ink: #2b2124;
+  --ink-soft: #5a4b4f;
+  --muted: #8c7a7e;
   --paper: #ffffff;
-  --panel: #f3f4f8;
-  --blue: #2743e8;
-  --blue-deep: #1b2fa8;
-  --blue-tint: #eef1ff;
-  --photo-tint: #dde3fb;
-  --sun: #ffc933;
-  --on-dark-soft: #d9dce6;
+  --panel: #fbf3f0;
+  --blue: #a14f5b;
+  --blue-deep: #7a3a44;
+  --blue-tint: #f9e3e1;
+  --photo-tint: #f3d6cf;
+  --sun: #f4c7ae;
+  --on-dark-soft: #e8d9d6;
 
   --font-display: "Bricolage Grotesque", "Arial Black", system-ui, sans-serif;
   --font-body: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
