@@ -354,3 +354,11 @@ button, input, textarea { font: inherit; color: inherit; }
   .faq__body { padding: 0 20px 22px; }
   .sticker { font-size: 1.5rem; }
 }
+
+/* ---------- Logo ---------- */
+.wordmark img { height: 22px; width: auto; display: block; }
+.site-footer__brand .wordmark img { height: 18px; }
+@media (max-width: 860px) { .wordmark img { height: 17px; } }
+@media (max-width: 360px) { .wordmark img { height: 15px; } }
+.site-footer__links > span { display: block; min-height: 0; }
+.site-footer__links span span { display: inline; padding: 0; min-height: 0; }

@@ -12,7 +12,8 @@ nurseries.html        For nurseries: what we offer, how it works, commission, FA
 privacy.html          Privacy policy (draft)
 assets/css/styles.css Design tokens and all styles
 assets/js/main.js     Mobile menu, FAQ tabs, commission slider, enquiry form, scroll reveals
-assets/favicon.svg    Bloom mark
+assets/logo.png       Wordmark logo
+assets/icon.png       Browser tab and home-screen icon
 ```
 
 Plain HTML, CSS and JavaScript with no build step. Open `index.html` in a browser, or run a local server:
@@ -29,7 +30,7 @@ Any static host works (GitHub Pages, Netlify, Vercel, Cloudflare Pages). Point t
 
 - **Photo consent.** Confirm each child's photo in `assets/img/` is cleared for use on the website.
 - **Enquiry form.** It currently opens the visitor's email app addressed to hello@rootsandbloom.uk. Connect a form service for in-page sending.
-- **Privacy policy.** `privacy.html` is a draft. Fill in the peach highlighted placeholders (business name and address, ICO number, gallery provider, retention periods) and have it reviewed.
+- **Privacy policy.** `privacy.html` is a draft. Fill in the peach highlighted placeholders (business name and address, ICO number, gallery retention period) and have it reviewed.
 - **Social preview image.** Add an `og:image` once photography is chosen.
 
 ## Design
