@@ -373,9 +373,10 @@ site-footer__links > span { display: block; min-height: 0; }
 .flip--left:hover:not(.is-swapped) .flip__card--young, .flip--left.is-swapped:hover .flip__card--adult { transform: translate(-26%, -14%) rotate(-12deg) scale(0.9); }
 .flip:focus-visible { outline-offset: 8px; }
 .meet__photos { padding-top: 40px; column-gap: 40px; }
-.meet__hint { font-family: var(--font-hand); font-weight: 700; font-size: 1.5rem; line-height: 1; color: var(--blue); transform: rotate(-2deg); margin-top: 18px; text-align: center; grid-column: 1 / -1; }
+.meet__hint { font-family: var(--font-hand); font-weight: 700; font-size: 1.5rem; line-height: 1; color: var(--blue); transform: rotate(-2deg); margin: 36px 0 0; text-align: center; grid-column: 1 / -1; }
 @media (max-width: 560px) {
   .flip__card--young, .flip.is-swapped .flip__card--adult { transform: translate(9%, -10%) rotate(7deg) scale(0.9); }
   .flip--left .flip__card--young, .flip--left.is-swapped .flip__card--adult { transform: translate(-9%, -10%) rotate(-7deg) scale(0.9); }
 }
 @media (prefers-reduced-motion: reduce) { .flip__card { transition: none; } }
+@media (max-width: 900px) { .meet { row-gap: 56px; } }

@@ -98,7 +98,7 @@
         '',
         data.get('message') || ''
       ].join('\n');
-      window.location.href = 'mailto:hello@rootsandbloom.co?subject=' +
+      window.location.href = 'mailto:hello@rootsandbloom.uk?subject=' +
         encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
     });
   }
@@ -111,7 +111,7 @@
     });
   });
 
-    // Footer year
+  // Footer year
   var year = document.getElementById('year');
   if (year) year.textContent = String(new Date().getFullYear());
 })();
