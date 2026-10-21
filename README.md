@@ -12,8 +12,7 @@ nurseries.html        For nurseries: what we offer, how it works, commission, FA
 privacy.html          Privacy policy (draft)
 assets/css/styles.css Design tokens and all styles
 assets/js/main.js     Mobile menu, FAQ tabs, commission slider, enquiry form, scroll reveals
-assets/logo.png       Wordmark logo
-assets/icon.png       Browser tab and home-screen icon
+assets/favicon.svg    Bloom mark
 ```
 
 Plain HTML, CSS and JavaScript with no build step. Open `index.html` in a browser, or run a local server:

@@ -103,7 +103,15 @@
     });
   }
 
-  // Footer year
+  // Meet us: tap to swap adult and child photos
+  Array.prototype.forEach.call(document.querySelectorAll('.flip'), function (btn) {
+    btn.addEventListener('click', function () {
+      var on = btn.classList.toggle('is-swapped');
+      btn.setAttribute('aria-pressed', String(on));
+    });
+  });
+
+    // Footer year
   var year = document.getElementById('year');
   if (year) year.textContent = String(new Date().getFullYear());
 })();

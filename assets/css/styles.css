@@ -355,10 +355,27 @@ button, input, textarea { font: inherit; color: inherit; }
   .sticker { font-size: 1.5rem; }
 }
 
-/* ---------- Logo ---------- */
-.wordmark img { height: 22px; width: auto; display: block; }
-.site-footer__brand .wordmark img { height: 18px; }
-@media (max-width: 860px) { .wordmark img { height: 17px; } }
-@media (max-width: 360px) { .wordmark img { height: 15px; } }
-.site-footer__links > span { display: block; min-height: 0; }
+site-footer__links > span { display: block; min-height: 0; }
 .site-footer__links span span { display: inline; padding: 0; min-height: 0; }
+
+/* ---------- Meet us: adult and child photo cards ---------- */
+.flip { position: relative; display: block; width: 100%; aspect-ratio: 3 / 4; padding: 0; border: 0; background: none; cursor: pointer; border-radius: var(--radius-card); -webkit-tap-highlight-color: transparent; }
+.flip__card { position: absolute; inset: 0; border-radius: var(--radius-card); overflow: hidden; background: var(--photo-tint); box-shadow: 0 14px 30px -14px rgba(43, 33, 36, 0.45); transition: transform 0.6s cubic-bezier(.2,.8,.2,1), z-index 0s linear 0.3s, filter 0.6s ease; }
+.flip__card img { width: 100%; height: 100%; object-fit: cover; display: block; }
+/* front card */
+.flip__card--adult, .flip.is-swapped .flip__card--young { z-index: 2; transform: rotate(-2deg); filter: none; }
+/* card peeking out behind */
+.flip__card--young, .flip.is-swapped .flip__card--adult { z-index: 1; transform: translate(22%, -11%) rotate(9deg) scale(0.9); filter: saturate(0.85); }
+.flip--left .flip__card--young, .flip--left.is-swapped .flip__card--adult { transform: translate(-22%, -11%) rotate(-9deg) scale(0.9); }
+.flip--right .flip__card--adult, .flip--right.is-swapped .flip__card--young { transform: rotate(2deg); }
+.flip:not(.is-swapped):hover .flip__card--young, .flip.is-swapped:hover .flip__card--adult { filter: none; }
+.flip--right:hover:not(.is-swapped) .flip__card--young, .flip--right.is-swapped:hover .flip__card--adult { transform: translate(26%, -14%) rotate(12deg) scale(0.9); }
+.flip--left:hover:not(.is-swapped) .flip__card--young, .flip--left.is-swapped:hover .flip__card--adult { transform: translate(-26%, -14%) rotate(-12deg) scale(0.9); }
+.flip:focus-visible { outline-offset: 8px; }
+.meet__photos { padding-top: 40px; column-gap: 40px; }
+.meet__hint { font-family: var(--font-hand); font-weight: 700; font-size: 1.5rem; line-height: 1; color: var(--blue); transform: rotate(-2deg); margin-top: 18px; text-align: center; grid-column: 1 / -1; }
+@media (max-width: 560px) {
+  .flip__card--young, .flip.is-swapped .flip__card--adult { transform: translate(9%, -10%) rotate(7deg) scale(0.9); }
+  .flip--left .flip__card--young, .flip--left.is-swapped .flip__card--adult { transform: translate(-9%, -10%) rotate(-7deg) scale(0.9); }
+}
+@media (prefers-reduced-motion: reduce) { .flip__card { transition: none; } }
